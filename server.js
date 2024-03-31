@@ -1,6 +1,7 @@
 import { connect } from './config.js';
 import express from 'express';
-import carRoutes from './routes/movieRoutes.js';
+import movieRoutes from './routes/movieRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 connect();
 
@@ -16,4 +17,5 @@ api.get('/test',(req, res)=>{
     res.send('Hola esto es una prueba de proyecto');
 });
 
-api.use(carRoutes);
+api.use(movieRoutes);
+api.use(userRoutes);

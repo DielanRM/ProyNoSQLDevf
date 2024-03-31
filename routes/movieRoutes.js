@@ -1,10 +1,10 @@
 import express from 'express';
 import { createMovie } from '../controllers/movieController.js';
 
-const carRoutes = express.Router();
+const movieRoutes = express.Router();
 
-carRoutes.post('/movies', createMovie);
+movieRoutes.post('/movies', createMovie);
 
 
 
-export default carRoutes; 
+export default movieRoutes; 
